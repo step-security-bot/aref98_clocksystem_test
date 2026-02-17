@@ -12,9 +12,13 @@ jobs:
   scorecard-analysis:
     runs-on: ubuntu-latest
     permissions:
-      security-events: write
-      id-token: write
-      contents: read
+      security-events: write 
+      id-token: write         
+      contents: read          
+      issues: read            
+      pull-requests: read     
+      checks: read            
+
     steps:
       - name: "Checkout code"
         uses: actions/checkout@v4
