@@ -46,43 +46,43 @@ jobs:
         path: app/build/reports/tests
 
 
-  # pmd-analysis:
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     contents: read       
-  #     pull-requests: read   
-    
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: pmd/pmd-github-action@v1
-  #       with:
-  #         rulesets: 'category/java/errorprone.xml'  
-  #         uploadSarifReport: false 
-
   pmd-analysis:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pull-requests: write  # For PR comments
+      contents: read       
+      pull-requests: read   
     
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Set up PMD
-        run: |
-          wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.21.0/pmd-dist-7.21.0-bin.zip
-          unzip pmd-dist-7.21.0-bin.zip
-      
-      - name: Run PMD
-        run: |
-          ./pmd-bin-7.21.0/bin/pmd check -d . -R category/java/errorprone.xml -f sarif -r pmd-report.sarif --no-cache || true
-      
-      - name: Upload PMD Results
-        uses: actions/upload-artifact@v4
-        if: always()
+      - uses: pmd/pmd-github-action@v2  # Change from v1 to v2
         with:
-          name: pmd-results
-          path: pmd-report.sarif
+          rulesets: 'category/java/errorprone.xml'
+          # uploadSarifReport: false
+
+  # pmd-analysis:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     pull-requests: write  # For PR comments
+    
+  #   steps:
+  #     - uses: actions/checkout@v4
+      
+  #     - name: Set up PMD
+  #       run: |
+  #         wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.21.0/pmd-dist-7.21.0-bin.zip
+  #         unzip pmd-dist-7.21.0-bin.zip
+      
+  #     - name: Run PMD
+  #       run: |
+  #         ./pmd-bin-7.21.0/bin/pmd check -d . -R category/java/errorprone.xml -f sarif -r pmd-report.sarif --no-cache || true
+      
+  #     - name: Upload PMD Results
+  #       uses: actions/upload-artifact@v4
+  #       if: always()
+  #       with:
+  #         name: pmd-results
+  #         path: pmd-report.sarif
 
 
   
