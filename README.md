@@ -1,7 +1,7 @@
 ![gradle](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg)
 
 ![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/pmd.yml/badge.svg)
-![CodeQL badge](https://github.com/aref98/clocksystem_test/actions/workflows/CodeQL/badge.svg)
+![CodeQL badge](https://github.com/aref98/clocksystem_test/actions/workflows/CodeQL.yml/badge.svg)
 
 
  
