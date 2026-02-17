@@ -49,14 +49,15 @@ jobs:
   pmd-analysis:
     runs-on: ubuntu-latest
     permissions:
-      contents: read        # Read repository contents
-      pull-requests: read   # Read PR information to get modified files
+      contents: read       
+      pull-requests: read   
     
     steps:
       - uses: actions/checkout@v4
       - uses: pmd/pmd-github-action@v1
         with:
-          rulesets: 'category/java/errorprone.xml'  # Also fix this
+          rulesets: 'category/java/errorprone.xml'  
+          uploadSarifAs: 'pmd-report'
 
   
   
