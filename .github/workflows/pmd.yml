@@ -16,10 +16,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
-      - uses: pmd/pmd-github-action@v2  # Change from v1 to v2
+      - uses: pmd/pmd-github-action@v2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Add this line
           rulesets: 'category/java/errorprone.xml'
-          # uploadSarifReport: false
+
 
   # pmd-analysis:
   #   runs-on: ubuntu-latest
