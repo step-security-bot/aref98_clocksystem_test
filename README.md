@@ -2,12 +2,10 @@
 
 ![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/pmd.yml/badge.svg)
 ![CodeQL badge](https://github.com/aref98/clocksystem_test/actions/workflows/CodeQL.yml/badge.svg)
-![Scorecard badge](https://github.com/aref98/clocksystem_test/actions/workflows/scorecard.yml/badge.svg)
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aref98/clocksystem_test/badge)](https://scorecard.dev/viewer/?uri=github.com/aref98/clocksystem_test)
 
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aref98/clocksystem_test/badge)](https://scorecard.dev/viewer/?uri=github.com/aref98/clocksystem_test)
- 
+
 
 
 # ClockSystem
