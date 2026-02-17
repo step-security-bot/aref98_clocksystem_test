@@ -2,7 +2,7 @@
 
 ![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/pmd.yml/badge.svg)
 ![CodeQL badge](https://github.com/aref98/clocksystem_test/actions/workflows/CodeQL.yml/badge.svg)
-![Scorecard badge](https://github.com/aref98/clocksystem_test/actions/workflows/scorecard.yml.yml/badge.svg)
+![Scorecard badge](https://github.com/aref98/clocksystem_test/actions/workflows/scorecard.yml/badge.svg)
 
 
 
