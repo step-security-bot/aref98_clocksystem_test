@@ -6,7 +6,7 @@
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aref98/clocksystem_test/badge)](https://scorecard.dev/viewer/?uri=github.com/aref98/clocksystem_test)
 
-
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aref98/clocksystem_test/badge)](https://scorecard.dev/viewer/?uri=github.com/aref98/clocksystem_test)
  
 
 
