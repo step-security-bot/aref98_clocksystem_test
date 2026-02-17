@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+
 jobs:
 
   pmd-analysis:
@@ -15,8 +18,13 @@ jobs:
       pull-requests: read   
     
     steps:
-      - uses: actions/checkout@v4
-      - uses: pmd/pmd-github-action@v2
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e # v2.14.2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - uses: pmd/pmd-github-action@d9c1f3c5940cbf5923f1354e83fa858b4496ebaa # v2.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # Add this line
           rulesets: 'category/java/errorprone.xml'
@@ -29,7 +37,7 @@ jobs:
   #     pull-requests: write  # For PR comments
     
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       
   #     - name: Set up PMD
   #       run: |
