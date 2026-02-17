@@ -1,5 +1,5 @@
 ![gradle](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg)
-![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/pmd-issues.svg)
+![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/docs/badges/pmd-issues.svg)
 
 
 # ClockSystem
