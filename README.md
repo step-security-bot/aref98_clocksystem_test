@@ -2,7 +2,7 @@
 
 ![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml
 
-[![Java CI with Gradle](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml)
+
 
 
 # ClockSystem
