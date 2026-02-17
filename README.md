@@ -1,6 +1,6 @@
-![gradle](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg)
+![gradle](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg?job=build-test)
 
-![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml
+![PMD badge](https://github.com/aref98/clocksystem_test/actions/workflows/gradle.yml/badge.svg?job=pmd-analysis)
 
 
 
